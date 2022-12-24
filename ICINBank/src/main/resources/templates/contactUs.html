@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Contact Us</title>
+<style type="text/css">
+
+h1 {
+  color: navy;
+  font-size: 40px;
+}
+</style>
+</head>
+<body>
+	<div align="center">
+		<img src="../static/images/titlelogo.jpg"
+			th:src="@{/images/bank_logo.jpg}" width="200" height="150" />
+			<h1>ICIN Bank</h1>
+	</div>
+	<hr>
+	<div align="right">
+		<nav>
+			<a style="color:blue; font-size: 17px" href="/user/userHome">Home</a> |
+			<a style="color:blue; font-size: 17px" href="/user/modifyProfile">Modify Profile</a> |
+			<a style="color:blue; font-size: 17px" href="/user/checkBalance">Check Balance</a> |
+			<a style="color:blue; font-size: 17px" href="/user/transferFunds">Transfer Funds</a> |
+			<a style="color:blue; font-size: 17px" href="/user/transactionSummary">Transaction Summary</a> |
+			<a style="color:blue; font-size: 17px" href="/user/contactUs">Contact Us</a> |
+			<a style="color:blue; font-size: 17px" href="/user/logout"><label th:text="'Logout(' + ${session.user} + ')'" ></label></a>
+		</nav>
+	</div>
+	<br>
+	<br>
+	<div style="font-size: 20px">Contact us at</div>
+	<div style="color: maroon">
+		Mobile No: +44 1111111111<br>
+		Email: nids@gmail.com
+	</div>
+</body>
+</html>
